@@ -1,4 +1,4 @@
-import axios from 'axios'
+const axios =  require('axios')
 
 const instance = axios.create({
   baseUrl: 'https://swapi.dev'

@@ -1,5 +1,5 @@
-import axios from './axios.js';
+const axios = require('axios')
 
-export default {
+module.exports = {
   axios,
 }

@@ -1,13 +1,12 @@
 'use strict'
 
-import express from 'express'
-import services from './services/index.js'
-import axios from 'axios'
+const express = require('express')
+const services = require('./services/index.js')
+const handlers = require ('./handlers.js')
+const axios = require('axios')
 const app = express()
 const port = 3000
 
-console.log('services:', services)
-
-app.get('/', (req, res) => res.send('Hello World !!'))
+app.get('/', handlers(services).get)
 
 app.listen(port, () => console.log(`App listening on port ${port}`))
