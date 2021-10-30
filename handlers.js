@@ -1,11 +1,8 @@
 'use strict';
 
-module.exports = (services) => {
-  const getHandler = (req, res) => {
-    res.send('Hello World !! @@@111')
+module.exports = ({axios}) => ({
+  get: async (req, res) => {
+    const {data} = await axios.get('/people')
+    return res.send(data)
   }
-
-  return {
-    get: getHandler
-  }
-}
+})

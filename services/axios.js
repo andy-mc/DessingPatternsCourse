@@ -1,7 +1,7 @@
-const axios =  require('axios')
+const axios = require('axios')
 
 const instance = axios.create({
-  baseUrl: 'https://swapi.dev'
+  baseURL: 'https://swapi.dev/api/'
 })
 
-export default instance;
+module.exports = instance
