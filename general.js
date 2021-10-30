@@ -2,7 +2,7 @@
 
 const express = require('express')
 const services = require('./services/index.js')
-const handlers = require ('./handlers.js')
+const handlers = require('./handlers.js')
 const app = express()
 const port = 3000
 
