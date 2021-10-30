@@ -1,0 +1,16 @@
+{
+  "name": "dessingpatterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add_my_method_to_prototype_object.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "express": "^4.17.1"
+  },
+  "type": "module"
+}
