@@ -4,4 +4,12 @@ const instance = axios.create({
   baseURL: 'https://swapi.dev/api/'
 })
 
-module.exports = instance
+const adapter = {
+  get: url => {
+    console.log('using axios adapter')
+    return instance.get(url)
+  }
+    
+}
+
+module.exports = adapter
